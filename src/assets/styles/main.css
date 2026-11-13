@@ -1,0 +1,39 @@
+@layer theme, base, primevue, components, utilities;
+
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+
+@theme {
+  --container-8xl: 90rem;
+}
+
+@layer base {
+  body {
+    @apply m-0 bg-surface-0 text-color antialiased dark:bg-surface-950;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-4 outline-primary;
+  }
+}
+
+@media print {
+  body {
+    color: #000;
+    background: #fff;
+  }
+  #main-content {
+    max-width: none;
+    padding: 0;
+  }
+  .document table {
+    break-inside: auto;
+  }
+  .document tr {
+    break-inside: avoid;
+  }
+  .document a {
+    overflow-wrap: anywhere;
+  }
+}

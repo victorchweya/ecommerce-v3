@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+package-lock.json
+docs/phase-1-rebuild-plan.md
+docs/rebuild-plan.md

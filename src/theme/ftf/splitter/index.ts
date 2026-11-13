@@ -1,0 +1,26 @@
+// Aura-derived FTF theme. MIT Copyright (c) 2025 PrimeTek. See LICENSE and PROVENANCE.md.
+import type { SplitterDesignTokens } from '@primeuix/themes/types/splitter'
+
+export default {
+  root: {
+    background: '{content.background}',
+    borderColor: '{content.border.color}',
+    color: '{content.color}',
+    transitionDuration: '{transition.duration}',
+  },
+  gutter: {
+    background: '{content.border.color}',
+  },
+  handle: {
+    size: '24px',
+    background: 'transparent',
+    borderRadius: '{content.border.radius}',
+    focusRing: {
+      width: '{focus.ring.width}',
+      style: '{focus.ring.style}',
+      color: '{focus.ring.color}',
+      offset: '{focus.ring.offset}',
+      shadow: '{focus.ring.shadow}',
+    },
+  },
+} satisfies SplitterDesignTokens
